@@ -8,6 +8,7 @@ const email = "jhondoe@ahk.com.ar";
 
 function extraerDominio(email) {
     let dominio = "";
+
     for (let i = 0; i < email.length; i++) {
         if (email[i] === "@") {
             i++;
@@ -17,6 +18,7 @@ function extraerDominio(email) {
             }
         }
     }
+    
     return dominio;
 }
 
