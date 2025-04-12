@@ -14,10 +14,12 @@ const separador3 = ".";
 
 function concatenadorDeStrings (strings, separador) {
     let cadenaFinal = "";
-    for (i = 0; i < strings.length - 1; i++) {
+
+    for (let i = 0; i < strings.length - 1; i++) {
         let string = strings[i];
         cadenaFinal += string + separador;
     }
+    
     return cadenaFinal + strings[strings.length - 1];
 }
 

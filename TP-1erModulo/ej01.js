@@ -12,18 +12,22 @@ const frase1 = "mi amigo me invitó a comer";
 const frase2 = "la caperuzita roja";
 const frase3 = "Mi AmIgO Me InViTó A CoMer";
 
-function convertirATitulo(frase) {
+function convertirATitulo (frase) {
     let palabras = frase.split(" ");
     let titulo = "";
+
     for (let i = 0; i < palabras.length; i++) {
         let palabra = palabras[i];
         let primeraLetra = palabra[0];
         let restoPalabra = "";
+
         for (let j = 1; j < palabra.length; j++) {
             restoPalabra += palabra[j];
         }
+
         titulo += primeraLetra.toUpperCase() + restoPalabra.toLowerCase() + " ";
     }
+
     return titulo;
 }
 
